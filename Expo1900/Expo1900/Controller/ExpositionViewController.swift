@@ -1,7 +1,7 @@
 import UIKit
 
-class ViewController: UIViewController {
-
+class ExpositionViewController: UIViewController {
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var visitorCountLabel: UILabel!
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        var modelForMainView = ModelForMainView()
+        var modelForMainView = ExpositionIntroViewModel()
         modelForMainView.setUpData()
         
         titleLabel.text = modelForMainView.title

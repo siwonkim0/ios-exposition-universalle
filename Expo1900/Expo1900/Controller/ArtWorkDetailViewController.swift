@@ -1,6 +1,6 @@
 import UIKit
 
-class aaaViewController: UIViewController {
+class ArtWorkDetailViewController: UIViewController {
     
     var id: Int?
     var expositionItem: [ExpositionItem]?

@@ -4,11 +4,12 @@ class KoreanArtWorkTableViewController: UITableViewController {
     
     var expositionItem: [ExpositionItem]?
     let defaultSectionCount = 1
+    let dataAssetIdentifier = "items"
     
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        let decodedData = JsonParser.decodeData(of: "items", how: [ExpositionItem].self)
+        let decodedData = JsonParser.decodeData(of: dataAssetIdentifier, how: [ExpositionItem].self)
         expositionItem = decodedData
         
     }
@@ -22,7 +23,7 @@ class KoreanArtWorkTableViewController: UITableViewController {
         
         guard let cell = sender as? KoreanArtWorkTableViewCell else { return }
        
-        if let destinationVC = segue.destination as? aaaViewController {
+        if let destinationVC = segue.destination as? ArtWorkDetailViewController {
             let id = tableView.indexPath(for: cell)?.row
             destinationVC.id = id
         }
