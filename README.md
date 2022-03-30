@@ -23,9 +23,6 @@ UITableView를 통해 화면에 그리기를 구현한 프로젝트입니다.
     + [테이블 뷰의 섹션수가 하나일때 numberOfSections 메서드를 지우는것보다 1로 명시하기](#테이블-뷰의-섹션수가-하나일때-numberofsections-메서드를-지우는것보다-1로-명시하기)
     + [특정 화면에서만 네비게이션바를 비활성화 하는 방법](#특정-화면에서만-네비게이션바를-비활성화-하는-방법)
     + [Meta Type](#meta-type)
-      - [`self` vs `Self'](#-self--vs--self-)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 <details>
 <summary>그라운드 룰</summary>
